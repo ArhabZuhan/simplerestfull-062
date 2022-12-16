@@ -25,16 +25,22 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class ProductServiceController {
-    private static final Map<String, Product> productRepo = new HashMap<>();
+    private static Map<String, Product> productRepo = new HashMap<>();
     static{
         Product honey = new Product();
         honey.setId("1");
         honey.setName("Honey");
+        honey.setNumber(5);
+        honey.setPrice(5000);
+        honey.setTotal(0);
         productRepo.put(honey.getId(), honey);
         
         Product almond = new Product();
         almond.setId("2");
         almond.setName("Almond");
+        almond.setNumber(5);
+        almond.setPrice(5000);
+        almond.setTotal(0);
         productRepo.put(almond.getId(), almond);
     }
     
