@@ -51,7 +51,7 @@ public class Product {
         return Total;
     }
 
-    public void setTotal(Integer Total) {
+    public void setTotal() {
         this.Total = Number * price;
     }
     
